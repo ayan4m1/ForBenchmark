@@ -45,10 +45,11 @@ namespace ForBenchmark
         public int ForIndex()
         {
             var sum = 0;
+            var localData = data;
 
-            for (var index = 0; index < data.Length; index++)
+            for (var index = 0; index < localData.Length; index++)
             {
-                var item = data[index];
+                var item = localData[index];
                 sum += item;
             }
 
