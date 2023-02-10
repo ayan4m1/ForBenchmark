@@ -2,26 +2,26 @@
 BenchmarkDotNet=v0.13.4, OS=Windows 11 (10.0.22000.1455/21H2)
 Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 .NET SDK=7.0.102
-[Host]   : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
-.NET 7.0 : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+  [Host]   : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+  .NET 7.0 : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
 
-Job=.NET 7.0  Runtime=.NET 7.0
+Job=.NET 7.0  Runtime=.NET 7.0  
 
-|   Method |  Items |           Mean |         Error |        StdDev |
-|--------- |------- |---------------:|--------------:|--------------:|
-|     Linq |     10 |      67.694 ns |     1.3010 ns |     1.0864 ns |
-|  ForEach |     10 |       2.844 ns |     0.0477 ns |     0.0398 ns |
-| ForIndex |     10 |       5.675 ns |     0.0620 ns |     0.0518 ns |
-|     Linq |    100 |     509.053 ns |     9.4843 ns |     9.7396 ns |
-|  ForEach |    100 |      38.396 ns |     0.6701 ns |     0.5940 ns |
-| ForIndex |    100 |      56.806 ns |     1.0952 ns |     1.0757 ns |
-|     Linq |   1000 |   5,281.463 ns |   103.7809 ns |    91.9991 ns |
-|  ForEach |   1000 |     337.726 ns |     6.7105 ns |     7.7278 ns |
-| ForIndex |   1000 |     518.621 ns |    10.4050 ns |    10.6852 ns |
-|     Linq |  10000 |  49,105.021 ns |   836.6289 ns |   782.5832 ns |
-|  ForEach |  10000 |   3,283.438 ns |    36.0030 ns |    33.6772 ns |
-| ForIndex |  10000 |   5,059.002 ns |    52.3648 ns |    48.9821 ns |
-|     Linq | 100000 | 488,473.400 ns | 5,804.2737 ns | 5,429.3212 ns |
-|  ForEach | 100000 |  32,778.777 ns |   422.1191 ns |   374.1976 ns |
-| ForIndex | 100000 |  50,741.357 ns |   726.2059 ns |   606.4148 ns |
+|   Method |  Items |           Mean |          Error |         StdDev |
+|--------- |------- |---------------:|---------------:|---------------:|
+|     Linq |     10 |      70.669 ns |      1.4172 ns |      2.2479 ns |
+|  ForEach |     10 |       3.077 ns |      0.0934 ns |      0.1310 ns |
+| ForIndex |     10 |       3.023 ns |      0.0906 ns |      0.1113 ns |
+|     Linq |    100 |     543.216 ns |     10.8841 ns |     20.9700 ns |
+|  ForEach |    100 |      40.535 ns |      0.8390 ns |      0.9988 ns |
+| ForIndex |    100 |      40.272 ns |      0.6458 ns |      0.6041 ns |
+|     Linq |   1000 |   5,531.571 ns |    107.9064 ns |    171.1511 ns |
+|  ForEach |   1000 |     348.876 ns |      6.9875 ns |      6.5361 ns |
+| ForIndex |   1000 |     344.546 ns |      6.9113 ns |      7.3951 ns |
+|     Linq |  10000 |  51,496.763 ns |  1,023.1228 ns |  1,791.9171 ns |
+|  ForEach |  10000 |   3,405.757 ns |     67.8085 ns |     90.5224 ns |
+| ForIndex |  10000 |   3,359.972 ns |     38.7173 ns |     34.3219 ns |
+|     Linq | 100000 | 522,652.730 ns | 10,344.8754 ns | 18,916.1896 ns |
+|  ForEach | 100000 |  34,125.226 ns |    660.7287 ns |    678.5197 ns |
+| ForIndex | 100000 |  33,853.445 ns |    518.2012 ns |    484.7257 ns |
 ```
